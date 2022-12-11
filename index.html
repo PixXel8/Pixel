@@ -249,31 +249,6 @@
         </div>
     </div>
 
-    <!-- aBRIR UN LOGIN BOX-->
-
-    <section>
-        <div id="loginBox" class="loginBox">
-            <img src="assets/user.png" class="user">
-            <div class="btnClose" onClick="cerrarlogin()">
-                <img src="assets/borrar.png">
-            </div>
-                <h2> Iniciar sesión </h2>
-                <form action="user_login.php" method="POST">
-                    <p>Email</p>
-                    <input type="text" 
-                        name="email"
-                        placeholder="Escribe tu email">
-                    <p>Contraseña</p>
-                    <input type="password" 
-                        name="password"
-                        placeholder="******">
-                    <input type="submit" value="Entrar">
-                    <a href="users_nuevo.php"> Crea una cuenta</a>
-                    <a href="#"> ¿Olvidó su contraseña? </a>
-                </form>
-        </div>
-    </section>
-
     <div id="button-up">
         <i class="fa-solid fa-up-long"></i>
     </div>
@@ -356,17 +331,6 @@
                 return false;
             }
         }
-
-        //NUEVO AGREGADO 
-function showloginBox(){
-    loginBox = document.getElementById("loginBox");
-    loginBox.classList.add("active")
-}
-function cerrarlogin(){
-    loginBox = document.getElementById("loginBox");
-    loginBox.classList.remove("active")
-
-}
 
 </script>
 </body>
